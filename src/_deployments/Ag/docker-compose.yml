@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.gw:
+    image: ${REGISTRY:-sw}/sw.gw:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "8080:5000"
+    container_name: sw-gw
+    build:
+      context: ../../
+      dockerfile: ./api-g/sw.api.gw/Dockerfile

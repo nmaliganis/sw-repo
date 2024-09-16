@@ -1,0 +1,68 @@
+$title-color-font: #a6aeb1;
+
+.gridHeader {
+	height: 40px;
+	grid-area: header;
+}
+
+.gridItem1 {
+	grid-area: main1;
+}
+.gridItem2 {
+	grid-area: main2;
+}
+.gridItem3 {
+	grid-area: main3;
+}
+.gridItem4 {
+	grid-area: main4;
+}
+.gridItem5 {
+	grid-area: main5;
+}
+.gridItem6 {
+	grid-area: main6;
+}
+
+.gridItemImage {
+	grid-area: image-grid;
+	display: flex;
+	justify-content: center;
+	height: 170px;
+}
+
+.gridContainer {
+	position: relative;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-areas:
+		" header header header header image-grid"
+		" main1 main1 main3 main5 image-grid"
+		" main2 main2 main4 main6 image-grid";
+	// background-color: #ffffff;
+	padding: 5px;
+}
+
+.gridHeaderContainer {
+	display: flex;
+	gap: 1rem;
+	margin-right: auto;
+}
+
+.gridHeaderTitle {
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 3px;
+}
+
+.gridItemTitle {
+	color: $title-color-font;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.gridCloseButton {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+}

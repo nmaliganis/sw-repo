@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1B99CDA1-A9D8-4479-9330-0EB0F24C3546}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{EBB78312-7FBF-4DAB-AA8E-490D43A5A968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{756FD5A7-9058-4348-9479-7754DBCA2D92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{342A5574-368A-40C7-9961-98305EAFB422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Emdot", "_Emdot", "{D87EEB80-FC83-40F3-B975-4F07362DF69D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "emdot.infrastructure", "src\emdot\emdot.infrastructure\emdot.infrastructure.csproj", "{6EC01708-7D8D-4455-98F0-CFB025D7D03F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.test.Integration.tests", "src\admin\test\dottrack.admin.test.Integration.tests\dottrack.admin.test.Integration.tests.csproj", "{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.contracts", "src\admin\domain\dottrack.admin.contracts\dottrack.admin.contracts.csproj", "{57642342-A550-48D6-BF49-DEF28EB5E42F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.model", "src\admin\domain\dottrack.admin.model\dottrack.admin.model.csproj", "{28FBDB03-501C-45C8-A060-6700C993711A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.repository", "src\admin\domain\dottrack.admin.repository\dottrack.admin.repository.csproj", "{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.services", "src\admin\domain\dottrack.admin.services\dottrack.admin.services.csproj", "{23DAECE2-D8BE-40E9-B7F2-45292825DA70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.common.dtos", "src\admin\common\dottrack.admin.common.dtos\dottrack.admin.common.dtos.csproj", "{35408E4A-22EE-4C5D-B012-7120B5E6DB38}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.admin.api", "src\admin\api\dottrack.admin.api\dottrack.admin.api.csproj", "{BF3E48DC-2F63-4338-809C-046766355024}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EC01708-7D8D-4455-98F0-CFB025D7D03F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC01708-7D8D-4455-98F0-CFB025D7D03F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC01708-7D8D-4455-98F0-CFB025D7D03F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC01708-7D8D-4455-98F0-CFB025D7D03F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57642342-A550-48D6-BF49-DEF28EB5E42F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57642342-A550-48D6-BF49-DEF28EB5E42F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57642342-A550-48D6-BF49-DEF28EB5E42F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57642342-A550-48D6-BF49-DEF28EB5E42F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FBDB03-501C-45C8-A060-6700C993711A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FBDB03-501C-45C8-A060-6700C993711A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FBDB03-501C-45C8-A060-6700C993711A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FBDB03-501C-45C8-A060-6700C993711A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DAECE2-D8BE-40E9-B7F2-45292825DA70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DAECE2-D8BE-40E9-B7F2-45292825DA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DAECE2-D8BE-40E9-B7F2-45292825DA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DAECE2-D8BE-40E9-B7F2-45292825DA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35408E4A-22EE-4C5D-B012-7120B5E6DB38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35408E4A-22EE-4C5D-B012-7120B5E6DB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35408E4A-22EE-4C5D-B012-7120B5E6DB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35408E4A-22EE-4C5D-B012-7120B5E6DB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF3E48DC-2F63-4338-809C-046766355024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3E48DC-2F63-4338-809C-046766355024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3E48DC-2F63-4338-809C-046766355024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3E48DC-2F63-4338-809C-046766355024}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6EC01708-7D8D-4455-98F0-CFB025D7D03F} = {D87EEB80-FC83-40F3-B975-4F07362DF69D}
+		{21D5E8AE-DA7B-4DE4-AF01-860575C4AECF} = {1B99CDA1-A9D8-4479-9330-0EB0F24C3546}
+		{57642342-A550-48D6-BF49-DEF28EB5E42F} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{28FBDB03-501C-45C8-A060-6700C993711A} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{692FAFFB-B8E4-4882-BB5E-E10A2EA4A8C2} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{23DAECE2-D8BE-40E9-B7F2-45292825DA70} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{35408E4A-22EE-4C5D-B012-7120B5E6DB38} = {756FD5A7-9058-4348-9479-7754DBCA2D92}
+		{BF3E48DC-2F63-4338-809C-046766355024} = {342A5574-368A-40C7-9961-98305EAFB422}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE74ECAB-DDF5-493E-B2DB-8DAE94FD4E3E}
+	EndGlobalSection
+EndGlobal

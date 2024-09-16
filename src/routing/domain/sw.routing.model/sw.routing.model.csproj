@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.model</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeoAPI" Version="1.7.5" />
+    <PackageReference Include="NetTopologySuite" Version="1.15.0" />
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="1.15.5" />
+    <PackageReference Include="NHibernate" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+    <ProjectReference Include="..\..\common\sw.routing.common.dtos\sw.routing.common.dtos.csproj" />
+  </ItemGroup>
+
+</Project>

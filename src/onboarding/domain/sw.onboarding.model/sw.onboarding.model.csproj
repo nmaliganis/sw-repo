@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.model</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+    <ProjectReference Include="..\..\common\sw.onboarding.common.dtos\sw.onboarding.common.dtos.csproj" />
+  </ItemGroup>
+
+</Project>

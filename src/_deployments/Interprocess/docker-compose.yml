@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.interprocess.api:
+    image: ${REGISTRY:-sw}/sw.interprocess.api:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "6500:5500"
+    container_name: sw-interprocess
+    build:
+      context: ../../
+      dockerfile: ./interprocess/sw.interprocess.api/Dockerfile

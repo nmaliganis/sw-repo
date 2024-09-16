@@ -1,0 +1,35 @@
+.reports-accepted {
+	.dx-radiobutton-checked .dx-radiobutton-icon .dx-radiobutton-icon-dot {
+		background: #73df70;
+	}
+
+	.dx-widget {
+		.dx-item-selected {
+			color: #73df70 !important;
+		}
+	}
+}
+
+.reports-partial-accepted {
+	.dx-radiobutton-checked .dx-radiobutton-icon .dx-radiobutton-icon-dot {
+		background: #fbd75a;
+	}
+
+	.dx-widget {
+		.dx-item-selected {
+			color: #fbd75a !important;
+		}
+	}
+}
+
+.reports-not-accepted {
+	.dx-radiobutton-checked .dx-radiobutton-icon .dx-radiobutton-icon-dot {
+		background: #ff7070;
+	}
+
+	.dx-widget {
+		.dx-item-selected {
+			color: #ff7070 !important;
+		}
+	}
+}

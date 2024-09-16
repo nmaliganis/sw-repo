@@ -1,0 +1,26 @@
+.route {
+	&-table {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 14px;
+		margin-top: 2rem;
+
+		th,
+		td {
+			padding: 8px;
+			text-align: left;
+			border: 1px solid #dddddd;
+			user-select: none;
+			-ms-user-select: none; /* IE 10 and IE 11 */
+			-webkit-user-select: none; /* Safari */
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		&-value {
+			text-align: center !important;
+		}
+	}
+}

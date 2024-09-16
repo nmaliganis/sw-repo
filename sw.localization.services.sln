@@ -1,0 +1,94 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1B99CDA1-A9D8-4479-9330-0EB0F24C3546}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{EBB78312-7FBF-4DAB-AA8E-490D43A5A968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{756FD5A7-9058-4348-9479-7754DBCA2D92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{342A5574-368A-40C7-9961-98305EAFB422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Emdot", "_Emdot", "{D87EEB80-FC83-40F3-B975-4F07362DF69D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "emdot.infrastructure", "src\emdot\emdot.infrastructure\emdot.infrastructure.csproj", "{F80FD1DC-2166-42F9-95FF-4B441B459575}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.api", "src\localization\api\dottrack.localization.web.api\dottrack.localization.api.csproj", "{1AA46510-2B22-40BF-8D26-9BE068C12B9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.common", "src\localization\common\dottrack.localization.common\dottrack.localization.common.csproj", "{1CDA0F50-66EA-4238-B055-EF4E4870998D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.common.dtos", "src\localization\common\dottrack.localization.common.dtos\dottrack.localization.common.dtos.csproj", "{B4908761-4C2A-428B-8ACE-6B7125B82BD7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.contracts", "src\localization\domain\dottrack.localization.contracts\dottrack.localization.contracts.csproj", "{CC5669CE-D553-491E-83F0-369E81A11EA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.model", "src\localization\domain\dottrack.localization.model\dottrack.localization.model.csproj", "{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.repository", "src\localization\domain\dottrack.localization.repository\dottrack.localization.repository.csproj", "{421EC81C-A3F4-463D-80A2-375133AC7B4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.services", "src\localization\domain\dottrack.localization.services\dottrack.localization.services.csproj", "{115D46BD-A541-4877-91E0-2A6C8DAA9401}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dottrack.localization.test.Integration.tests", "src\localization\test\dottrack.localization.test.Integration.tests\dottrack.localization.test.Integration.tests.csproj", "{23DE43C5-92EF-442E-BB18-926C953706CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F80FD1DC-2166-42F9-95FF-4B441B459575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F80FD1DC-2166-42F9-95FF-4B441B459575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F80FD1DC-2166-42F9-95FF-4B441B459575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F80FD1DC-2166-42F9-95FF-4B441B459575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA46510-2B22-40BF-8D26-9BE068C12B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA46510-2B22-40BF-8D26-9BE068C12B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA46510-2B22-40BF-8D26-9BE068C12B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA46510-2B22-40BF-8D26-9BE068C12B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CDA0F50-66EA-4238-B055-EF4E4870998D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDA0F50-66EA-4238-B055-EF4E4870998D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDA0F50-66EA-4238-B055-EF4E4870998D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDA0F50-66EA-4238-B055-EF4E4870998D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4908761-4C2A-428B-8ACE-6B7125B82BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4908761-4C2A-428B-8ACE-6B7125B82BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4908761-4C2A-428B-8ACE-6B7125B82BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4908761-4C2A-428B-8ACE-6B7125B82BD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC5669CE-D553-491E-83F0-369E81A11EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC5669CE-D553-491E-83F0-369E81A11EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC5669CE-D553-491E-83F0-369E81A11EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC5669CE-D553-491E-83F0-369E81A11EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421EC81C-A3F4-463D-80A2-375133AC7B4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421EC81C-A3F4-463D-80A2-375133AC7B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421EC81C-A3F4-463D-80A2-375133AC7B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421EC81C-A3F4-463D-80A2-375133AC7B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{115D46BD-A541-4877-91E0-2A6C8DAA9401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{115D46BD-A541-4877-91E0-2A6C8DAA9401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{115D46BD-A541-4877-91E0-2A6C8DAA9401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{115D46BD-A541-4877-91E0-2A6C8DAA9401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DE43C5-92EF-442E-BB18-926C953706CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DE43C5-92EF-442E-BB18-926C953706CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DE43C5-92EF-442E-BB18-926C953706CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DE43C5-92EF-442E-BB18-926C953706CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F80FD1DC-2166-42F9-95FF-4B441B459575} = {D87EEB80-FC83-40F3-B975-4F07362DF69D}
+		{1AA46510-2B22-40BF-8D26-9BE068C12B9B} = {342A5574-368A-40C7-9961-98305EAFB422}
+		{1CDA0F50-66EA-4238-B055-EF4E4870998D} = {756FD5A7-9058-4348-9479-7754DBCA2D92}
+		{B4908761-4C2A-428B-8ACE-6B7125B82BD7} = {756FD5A7-9058-4348-9479-7754DBCA2D92}
+		{CC5669CE-D553-491E-83F0-369E81A11EA3} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{8BE0D861-70B8-48D3-8DBE-1FFA95393CDA} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{421EC81C-A3F4-463D-80A2-375133AC7B4F} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{115D46BD-A541-4877-91E0-2A6C8DAA9401} = {EBB78312-7FBF-4DAB-AA8E-490D43A5A968}
+		{23DE43C5-92EF-442E-BB18-926C953706CA} = {1B99CDA1-A9D8-4479-9330-0EB0F24C3546}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE74ECAB-DDF5-493E-B2DB-8DAE94FD4E3E}
+	EndGlobalSection
+EndGlobal

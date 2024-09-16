@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.contracts</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+    <ProjectReference Include="..\sw.routing.model\sw.routing.model.csproj" />
+  </ItemGroup>
+</Project>

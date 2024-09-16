@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>sw.asset.common.dtos</AssemblyName>
+    <RootNamespace>sw.asset.common.dtos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Cqrs\Persons\PersonCqrs.cs~RF5838c23.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

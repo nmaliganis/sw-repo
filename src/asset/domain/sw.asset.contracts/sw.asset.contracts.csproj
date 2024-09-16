@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.contracts</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ContractRepositories\IGeofenceService\**" />
+    <Compile Remove="V1\GeofenceService\**" />
+    <EmbeddedResource Remove="ContractRepositories\IGeofenceService\**" />
+    <EmbeddedResource Remove="V1\GeofenceService\**" />
+    <None Remove="ContractRepositories\IGeofenceService\**" />
+    <None Remove="V1\GeofenceService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ContractRepositories\IDeviceRepository.cs~RF1aed296.TMP" />
+    <None Remove="V1\AssetProcessors\ContainerProcessors\ICreateContainerProcessor.cs~RF4d0dd4.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\sw.asset.common.dtos\sw.asset.common.dtos.csproj" />
+    <ProjectReference Include="..\sw.asset.model\sw.asset.model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+  </ItemGroup>
+</Project>

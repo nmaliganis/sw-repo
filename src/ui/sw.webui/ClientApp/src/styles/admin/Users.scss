@@ -1,0 +1,25 @@
+.total-summary {
+	text-align: right !important;
+}
+
+.user-form-group {
+	.dx-field-item-content {
+		.dx-form-group-with-caption {
+			padding-left: 0 !important;
+		}
+	}
+}
+
+.custom-tabbed-item {
+	border-top: 0;
+	border: 1px solid #e9e9e9;
+}
+
+.custom-tabbed-item > .dx-field-item-content > .dx-multiview > .dx-tabpanel-tabs > .dx-tabs > .dx-tabs-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.previous-button-container {
+	text-align: left !important;
+}

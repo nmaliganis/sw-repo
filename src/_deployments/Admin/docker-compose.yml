@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.admin.api:
+    image: ${REGISTRY:-sw}/sw.admin.api:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "6400:5400"
+    container_name: sw-admin
+    build:
+      context: ../../
+      dockerfile: ./admin/api/sw.admin.api/Dockerfile

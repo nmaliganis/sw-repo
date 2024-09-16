@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.services</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+    <ProjectReference Include="..\..\common\sw.routing.common.dtos\sw.routing.common.dtos.csproj" />
+    <ProjectReference Include="..\..\common\sw.routing.common.infrastructure\sw.routing.common.infrastructure.csproj" />
+    <ProjectReference Include="..\sw.routing.contracts\sw.routing.contracts.csproj" />
+  </ItemGroup>
+
+</Project>

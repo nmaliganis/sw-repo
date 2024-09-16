@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.contracts</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\sw.auth.common.dtos\sw.auth.common.dtos.csproj" />
+    <ProjectReference Include="..\sw.auth.model\sw.auth.model.csproj" />
+  </ItemGroup>
+</Project>

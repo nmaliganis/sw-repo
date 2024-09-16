@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.contracts</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\sw.landmark.common.dtos\sw.landmark.common.dtos.csproj" />
+    <ProjectReference Include="..\sw.landmark.model\sw.landmark.model.csproj" />
+  </ItemGroup>
+</Project>

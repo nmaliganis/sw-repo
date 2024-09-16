@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.onboarding.api:
+    image: ${REGISTRY:-sw}/sw.onboarding.api:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "6700:5700"
+    container_name: sw-onboarding
+    build:
+      context: ../../
+      dockerfile: ./onboarding/api/sw.onboarding.api/Dockerfile

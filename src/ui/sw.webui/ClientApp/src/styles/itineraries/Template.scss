@@ -1,0 +1,35 @@
+.template {
+	&-form {
+		height: 100%;
+	}
+}
+
+.template-form {
+	.dx-field-item-content-location-bottom {
+		height: 100%;
+		.dx-form-group {
+			height: 100%;
+			.dx-form-group-content {
+				height: 100%;
+				.dx-layout-manager {
+					height: 100%;
+					.dx-widget {
+						height: 100%;
+						.dx-box-flex {
+							height: 100%;
+							.dx-item-content {
+								height: 100%;
+								.dx-datagrid-edit-form-item {
+									height: 100%;
+									.dx-field-item-content {
+										height: 100%;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

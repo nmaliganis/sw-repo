@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>dottrack.localization.common.dtos</AssemblyName>
+    <RootNamespace>dottrack.localization.common.dtos</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\emdot\emdot.infrastructure\emdot.infrastructure.csproj" />
+    <ProjectReference Include="..\dottrack.localization.common\sw.localization.common.csproj" />
+  </ItemGroup>
+
+</Project>

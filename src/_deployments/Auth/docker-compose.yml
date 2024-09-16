@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.auth.api:
+    image: ${REGISTRY:-sw}/sw.auth.api:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "6200:5200"
+    container_name: sw-auth
+    build:
+      context: ../../
+      dockerfile: ./auth/api/sw.auth.api/Dockerfile

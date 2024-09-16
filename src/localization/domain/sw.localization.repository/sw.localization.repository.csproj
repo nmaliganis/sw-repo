@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>dottrack.repository</PackageId>
+    <AssemblyName>dottrack.localization.repository</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\dottrack.localization.common\sw.localization.common.csproj" />
+    <ProjectReference Include="..\dottrack.localization.contracts\sw.localization.contracts.csproj" />
+    <ProjectReference Include="..\dottrack.localization.model\sw.localization.model.csproj" />
+  </ItemGroup>
+
+</Project>

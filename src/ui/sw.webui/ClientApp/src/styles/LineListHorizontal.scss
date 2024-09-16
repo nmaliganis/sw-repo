@@ -1,0 +1,45 @@
+.outerBox {
+	position: relative;
+	max-width: 100%;
+	width: 100%;
+}
+
+.innerBox {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.innerBox::-webkit-scrollbar {
+	/* WebKit */
+	width: 0;
+	height: 0;
+}
+
+.content {
+	flex: 0 0 100%;
+}
+
+.btnBox {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.leftBtnBox {
+	left: 0;
+}
+
+.rightBtnBox {
+	right: 0;
+}
+
+.btn {
+	position: relative;
+	top: 50%;
+	bottom: 50%;
+	transform: translateY(-50%);
+}

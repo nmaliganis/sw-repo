@@ -1,0 +1,68 @@
+.notFound {
+	position: relative;
+	height: 100vh;
+}
+
+.notFound .notFoundPanel {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.notFoundPanel {
+	max-width: 520px;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+.notFoundId {
+	position: relative;
+	height: 240px;
+}
+
+.notFoundPanel .notFoundId h3 {
+	font-family: "Cabin", sans-serif;
+	position: relative;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #262626;
+	margin: 0px;
+	letter-spacing: 3px;
+	padding-left: 6px;
+}
+
+.notFoundPanel .notFoundId h1 {
+	font-family: "Montserrat", sans-serif;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-size: 252px;
+	font-weight: 900;
+	margin: 0px;
+	color: #262626;
+	text-transform: uppercase;
+	letter-spacing: -40px;
+	margin-left: -20px;
+}
+
+.notFoundPanel .notFoundId h1 > span {
+	text-shadow: -8px 0px 0px #fff;
+}
+
+.notFoundPanel h2 {
+	font-family: "Cabin", sans-serif;
+	font-size: 20px !important;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 25px;
+}

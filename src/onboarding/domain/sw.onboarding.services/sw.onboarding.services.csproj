@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.services</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+    <ProjectReference Include="..\..\common\sw.onboarding.common.infrastructure\sw.onboarding.common.infrastructure.csproj" />
+    <ProjectReference Include="..\sw.onboarding.contracts\sw.onboarding.contracts.csproj" />
+  </ItemGroup>
+
+</Project>

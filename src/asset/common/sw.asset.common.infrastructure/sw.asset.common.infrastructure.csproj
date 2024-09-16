@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Exceptions\Devices\DeviceAlreadyExistsException.cs~RF1b18d9f.TMP" />
+    <None Remove="Exceptions\Devices\DeviceDoesNotExistAfterMadePersistentException.cs~RF1b20a80.TMP" />
+    <None Remove="Exceptions\SensorTypes\InvalidSensorTypeException.cs~RF33b6cad.TMP" />
+  </ItemGroup>
+
+</Project>

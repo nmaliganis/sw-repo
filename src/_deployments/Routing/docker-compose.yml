@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.routing.api:
+    image: ${REGISTRY:-sw}/sw.routing.api:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "6600:5600"
+    container_name: sw-routing
+    build:
+      context: ../../
+      dockerfile: ./routing/api/sw.routing.api/Dockerfile

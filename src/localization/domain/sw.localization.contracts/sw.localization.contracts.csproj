@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>dottrack.contracts</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\dottrack.localization.common.dtos\sw.localization.common.dtos.csproj" />
+    <ProjectReference Include="..\dottrack.localization.model\sw.localization.model.csproj" />
+  </ItemGroup>
+</Project>

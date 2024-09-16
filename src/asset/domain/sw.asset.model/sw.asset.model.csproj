@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.model</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Devices\Simcards\SimCardType.cs~RF17d02f0.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GeoAPI" Version="1.7.5" />
+    <PackageReference Include="NetTopologySuite" Version="2.5.0" />
+    <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="3.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.infrastructure\sw.infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

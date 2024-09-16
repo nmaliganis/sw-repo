@@ -1,0 +1,64 @@
+.pie-stats {
+	height: 350px;
+	width: 350px;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dxc-hole-template {
+	svg {
+		text {
+			// fill: rgba(255, 255, 255, 0.87) !important;
+		}
+	}
+}
+
+.latest-activity-item {
+	display: flex;
+	height: 65px;
+
+	&-icon {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		padding-right: 0.7rem;
+	}
+
+	&-title {
+		font-weight: 800;
+		font-size: 18px;
+	}
+	&-description {
+		display: flex;
+		gap: 0.8em;
+	}
+	&-status {
+		font-weight: bold;
+	}
+	&-timestamp {
+		color: #c0c0c0;
+	}
+}
+
+.activity-list-container {
+	min-height: 440px;
+	height: 100%;
+	padding-left: 5px;
+}
+
+.activity-list-container {
+	display: flex;
+	flex-direction: column;
+
+	.dx-list-item {
+		margin: 4px 5px 4px 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+		border-radius: 8px;
+		width: 90% !important;
+	}
+
+	.dx-list-item:first-of-type {
+		margin-top: 8px;
+	}
+}

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.services</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UserServicesMarker.cs~RF1ebc0ac.TMP" />
+    <None Remove="V1\SimcardService\CreateSimcardProcessor.cs~RF4dff9c0.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.auth.messaging\sw.auth.messaging.csproj" />
+    <ProjectReference Include="..\..\common\sw.asset.common.infrastructure\sw.asset.common.infrastructure.csproj" />
+    <ProjectReference Include="..\sw.asset.contracts\sw.asset.contracts.csproj" />
+  </ItemGroup>
+
+</Project>

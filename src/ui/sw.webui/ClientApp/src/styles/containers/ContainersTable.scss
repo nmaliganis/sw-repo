@@ -1,0 +1,132 @@
+.table-background {
+	// background-color: #efefef;
+	padding: 5px !important;
+	background: #f7f7f7;
+}
+
+.toolbar-label {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+.level-filter-container {
+	.dx-buttongroup-wrapper {
+		.dx-widget.dx-item-selected {
+			background-color: #35baf6 !important;
+		}
+	}
+
+	.dx-buttongroup-item.dx-button-mode-text {
+		border-radius: 50px !important;
+		width: 35px;
+		height: 35px;
+	}
+}
+
+.tiles {
+	&-container {
+		display: flex;
+		flex-direction: row;
+		height: 60px;
+		gap: 10px;
+	}
+
+	&-item {
+		width: 100%;
+		height: 100%;
+		min-width: 115px;
+		max-width: 150px;
+		border-radius: 6px;
+		background: #fafafa;
+		border: 1px solid #e0e0e0;
+		cursor: pointer;
+
+		&-inner {
+			height: 100%;
+			padding: 12px;
+			display: flex;
+			gap: 8px;
+			align-items: center;
+		}
+	}
+
+	&-icon {
+		color: #757575;
+		height: 80%;
+	}
+
+	&-icon-disabled {
+		color: #c2c2c2;
+		height: 80%;
+	}
+
+	&-total {
+		font-weight: bold;
+		font-size: 18px;
+	}
+
+	&-total-disabled {
+		font-weight: bold;
+		font-size: 18px;
+		color: #c2c2c2;
+	}
+
+	&-sub-title {
+		color: #35baf6;
+	}
+	&-sub-title-disabled {
+		color: #c2c2c2;
+	}
+}
+
+.select-tile-sub-tile {
+	.dx-dropdowneditor-input-wrapper {
+		.dx-texteditor-container {
+			.dx-texteditor-input-container {
+				.dx-texteditor-input {
+					padding: 0px !important;
+					color: #35baf6;
+				}
+			}
+		}
+	}
+}
+
+.container-add-button {
+	.dx-datagrid-addrow-button .dx-icon-edit-button-addrow {
+		color: white !important;
+	}
+}
+
+// Deleted rows
+.dx-datagrid-rowsview .dx-row-removed > td {
+	background-color: rgb(230, 130, 130) !important;
+	border-top-color: rgb(230, 130, 130) !important;
+	border-bottom-color: rgb(230, 130, 130) !important;
+}
+
+//Inserted Rows
+.dx-datagrid-rowsview .dx-row-inserted > td {
+	background-color: rgb(115, 212, 115) !important;
+	border-top-color: rgb(115, 212, 115) !important;
+	border-bottom-color: rgb(115, 212, 115) !important;
+}
+
+// Updated cells
+.dx-datagrid-rowsview .dx-data-row .dx-cell-modified.dx-cell-modified::after {
+	// border-color: rgb(252, 222, 53) !important;
+	border-color: rgb(115, 212, 115) !important;
+}
+
+// .dx-header-row {
+// 	background-color: #a08273;
+// }
+
+// Outdated lastUpdated cells
+.outdated-cell-container {
+	cursor: help;
+	color: #777777;
+	text-decoration: underline dotted;
+}

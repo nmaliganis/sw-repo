@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>dottrack.asset.Integration.tests</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+
+    <AssemblyName>dottrack.asset.Integration.tests</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="V1\EventHistory\**" />
+    <Compile Remove="V1\Geofence\**" />
+    <EmbeddedResource Remove="V1\EventHistory\**" />
+    <EmbeddedResource Remove="V1\Geofence\**" />
+    <None Remove="V1\EventHistory\**" />
+    <None Remove="V1\Geofence\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.authentication.json" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.authentication.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.1.13" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\auth\api\dottrack.auth.api\sw.auth.api.csproj" />
+    <ProjectReference Include="..\..\api\dottrack.asset.api\sw.asset.api.csproj" />
+    <ProjectReference Include="..\..\common\dottrack.asset.common.dtos\sw.asset.common.dtos.csproj" />
+  </ItemGroup>
+
+</Project>

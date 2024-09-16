@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>sw.asset.api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\HomeController.cs~RFd8cece.TMP" />
+    <None Remove="Proxies\IMemberRegisteredProxyManipulator.cs~RF1c999169.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ListStartupServices" Version="1.1.4" />
+    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="6.0.2" />
+    <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="6.0.3" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="4.0.2" />
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Azure.Extensions.AspNetCore.Configuration.Secrets" Version="1.2.2" />
+    <PackageReference Include="Azure.Identity" Version="1.9.0" />
+    <PackageReference Include="FluentNHibernate" Version="3.2.1" />
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.4" />
+    <PackageReference Include="Geocoding.Core" Version="4.0.1" />
+    <PackageReference Include="Geocoding.Google" Version="4.0.1" />
+    <PackageReference Include="Geocoding.MapQuest" Version="4.0.1" />
+    <PackageReference Include="Marvin.Cache.Headers" Version="6.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="NHibernate" Version="5.4.2" />
+    <PackageReference Include="NHibernate.Caches.RtMemoryCache" Version="5.9.0" />
+    <PackageReference Include="NHibernate.Spatial" Version="7.0.0" />
+    <PackageReference Include="NHibernate.Spatial.PostGis" Version="7.0.0" />
+    <PackageReference Include="NHibernateProfiler" Version="6.0.6040" />
+    <PackageReference Include="Npgsql" Version="6.0.9" />
+    <PackageReference Include="Npgsql.Json.NET" Version="6.0.9" />
+    <PackageReference Include="Serilog.Enrichers.AspnetcoreHttpcontext" Version="1.1.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Spectre.Console" Version="0.47.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.4.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.30.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.auth.messaging\sw.auth.messaging.csproj" />
+    <ProjectReference Include="..\..\..\sw\sw.azure.messaging\sw.azure.messaging.csproj" />
+    <ProjectReference Include="..\..\domain\sw.asset.repository\sw.asset.repository.csproj" />
+    <ProjectReference Include="..\..\domain\sw.asset.services\sw.asset.services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot" />
+  </ItemGroup>
+
+</Project>

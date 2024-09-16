@@ -1,0 +1,66 @@
+.device-box > div:first-child {
+	padding: 10px;
+}
+
+.device-box-inner > div:first-child {
+	padding: 10px;
+	padding-left: 0px;
+}
+
+.device-box-inner > div:nth-child(2) {
+	padding: 10px;
+	padding-left: 0px;
+	padding-top: 0px;
+}
+
+.device-details {
+	&-images-container {
+		display: flex;
+		gap: 2rem;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+	&-divider {
+		height: 100%;
+		margin: 0px 15px;
+		border-left: 1px solid #e0e0e0;
+	}
+	&-title {
+		margin-top: 0;
+	}
+	&-image {
+		border: 3px solid white;
+		box-shadow: 0px 0px 10px 1px #b7b7b7;
+		position: relative;
+
+		&-remove-button {
+			top: 6px;
+			right: 6px;
+			position: absolute !important;
+			border: 1px solid #b7b7b7;
+		}
+	}
+	&-no-image {
+		padding: 60px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		border: 3px dashed #cccc;
+	}
+	&-center-button {
+		text-align: center !important;
+	}
+	&-activation {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		&-complete {
+			font-size: 135px !important;
+			color: #03a9f4;
+			font-weight: bold !important;
+			padding-bottom: 5rem;
+		}
+	}
+}

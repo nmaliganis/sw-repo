@@ -1,0 +1,95 @@
+.container-tabs-icons .dx-icon.dx-icon-info {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.container-tabs-icons .dx-icon.dx-icon-bookmark {
+	color: rgba(0, 0, 0, 0.54);
+}
+
+// Tab Timeline
+
+.date-range-picker {
+	display: flex;
+	gap: 0.2rem;
+}
+
+.container-timeline-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#chart {
+	padding: 0px 15px 15px 15px;
+	height: 100%;
+}
+
+// Tab Service log
+
+.dx-datagrid-headers {
+	background-color: #efefef;
+}
+
+.excel-footer-icon {
+	.dx-icon.dx-icon-exportxlsx {
+		color: white;
+	}
+}
+
+.print-footer-icon {
+	.dx-icon.dx-icon-print {
+		color: white;
+	}
+}
+
+.email-footer-icon {
+	.dx-icon.dx-icon-email {
+		color: white;
+	}
+}
+
+// Tab Map
+
+.map-container-tab {
+	width: 100%;
+	height: 100%;
+	// padding: 5px;
+}
+
+.container-icon-state {
+	-webkit-filter: drop-shadow(0 0 0.25rem #b7b7b7);
+	filter: drop-shadow(0 0 0.25rem #b7b7b7);
+}
+
+.highlight-indicator {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: transparent;
+	border: 2px rgb(224, 59, 59) solid;
+	animation-name: ani;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 1.5s;
+	animation-direction: normal;
+}
+
+@keyframes ani {
+	0% {
+		transform: scale(0.2);
+		opacity: 0;
+	}
+	1% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.5);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(2);
+		opacity: 0;
+	}
+}

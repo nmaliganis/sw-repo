@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>sw.infrastructure</AssemblyName>
+    <RootNamespace>sw.infrastructure</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+    <Company>sw</Company>
+    <Authors>sw</Authors>
+    <PackageIcon>sw-logo.png</PackageIcon>
+    <PackageIconUrl />
+    <RepositoryUrl>https://dev.azure.com/sw-sa/DotTrack/_git/DotTrack</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>C#</PackageTags>
+    <Description>A cross-product infrastructure for common design patterns like IAggregateRoot, EntityBase, IUnitOfWork etc.</Description>
+    <Copyright></Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Exceptions\Domain\**" />
+    <EmbeddedResource Remove="Exceptions\Domain\**" />
+    <None Remove="Exceptions\Domain\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.12" />
+  </ItemGroup>
+
+</Project>

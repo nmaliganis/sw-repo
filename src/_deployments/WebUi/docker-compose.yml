@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  sw.ui:
+    image: ${REGISTRY:-sw}/sw.ui:${PLATFORM:-linux}-${TAG:-latest}
+    ports:
+      - "80:5100"
+    container_name: sw-ui
+    build:
+      context: ../../
+      dockerfile: ./ui/sw.webui/Dockerfile

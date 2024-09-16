@@ -1,0 +1,38 @@
+.list-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	.dx-list-item {
+		margin: 4px 5px 4px 5px;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+		border-radius: 8px;
+		width: 98% !important;
+	}
+}
+
+.list-item {
+	height: 65px;
+}
+
+.item-title {
+	font-weight: 800;
+	font-size: 18px;
+}
+
+.item-mark-as-read {
+	float: right;
+	font-size: 18px;
+	margin-top: -4px;
+}
+
+.item-description {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-style: italic;
+}
+
+.item-timestamp {
+	color: #777777;
+	text-align: start;
+}

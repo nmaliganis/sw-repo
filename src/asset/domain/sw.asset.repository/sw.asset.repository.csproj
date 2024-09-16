@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.repository</PackageId>
+    <AssemblyName>sw.asset.repository</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentNHibernate" Version="3.1.0" />
+    <PackageReference Include="NHibernate" Version="5.3.12" />
+    <PackageReference Include="nhibernate.postgresql.json" Version="1.1.2" />
+    <PackageReference Include="NHibernate.Spatial" Version="7.0.0" />
+    <PackageReference Include="NHibernate.Spatial.PostGis" Version="7.0.0" />
+    <PackageReference Include="Npgsql" Version="6.0.9" />
+    <PackageReference Include="Npgsql.Json.NET" Version="6.0.9" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.66" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\sw.asset.common.infrastructure\sw.asset.common.infrastructure.csproj" />
+    <ProjectReference Include="..\sw.asset.contracts\sw.asset.contracts.csproj" />
+    <ProjectReference Include="..\sw.asset.model\sw.asset.model.csproj" />
+  </ItemGroup>
+
+</Project>

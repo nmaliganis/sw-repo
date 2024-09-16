@@ -1,0 +1,99 @@
+$main-color: #03a9f4;
+$live-color: #e41e0c;
+$offline-color: #777777;
+
+.indicator {
+	&-container {
+		padding: 10px 11px 9px;
+		margin-left: 0.6rem;
+	}
+
+	&-live {
+		width: 1.2rem;
+		height: 1.2rem;
+		background: $live-color;
+		border-radius: 50%;
+		box-shadow: 0 0 0 0 $live-color;
+		animation: pulse-red 2s infinite;
+
+		&:after {
+			width: 0.5rem;
+			height: 0.5rem;
+			border-radius: 50%;
+			transform: scale(0.75);
+		}
+	}
+
+	&-connecting {
+		border: 2px solid #f3f3f3;
+		border-radius: 50%;
+		border-top: 2px solid $main-color;
+		width: 1.2rem;
+		height: 1.2rem;
+		-webkit-animation: spin 2s linear infinite; /* Safari */
+		animation: spin 2s linear infinite;
+	}
+
+	&-offline {
+		position: relative;
+		width: 1.2rem !important;
+		height: 1.2rem !important;
+		background: #dcdcdc;
+		border-radius: 50%;
+		cursor: pointer;
+		margin-left: 1px;
+
+		&:after {
+			content: "";
+			height: 25px;
+			width: 2px;
+			background-color: white;
+			position: absolute;
+			top: -5px;
+			right: 7px;
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+
+		&:hover {
+			background: $offline-color;
+		}
+	}
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes pulse-red {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(228, 30, 12, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0.8rem rgba(228, 30, 12, 0); //(228, 30, 12, 0.1)
+	}
+
+	// 71% (228, 30, 12, 0)
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(228, 30, 12, 0);
+	}
+} // Keyframe commented settings are for better darkmode quality

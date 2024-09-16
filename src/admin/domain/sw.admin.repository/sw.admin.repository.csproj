@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.repository</PackageId>
+    <AssemblyName>sw.landmark.repository</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sw.admin.contracts\sw.admin.contracts.csproj" />
+    <ProjectReference Include="..\sw.admin.model\sw.admin.model.csproj" />
+  </ItemGroup>
+
+</Project>

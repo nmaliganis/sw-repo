@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <PackageId>sw.services</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\sw\sw.auth.messaging\sw.auth.messaging.csproj" />
+    <ProjectReference Include="..\sw.admin.contracts\sw.admin.contracts.csproj" />
+  </ItemGroup>
+
+</Project>
