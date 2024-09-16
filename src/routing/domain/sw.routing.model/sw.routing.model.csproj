@@ -9,7 +9,7 @@
     <PackageReference Include="GeoAPI" Version="1.7.5" />
     <PackageReference Include="NetTopologySuite" Version="1.15.0" />
     <PackageReference Include="NetTopologySuite.IO.GeoJSON" Version="1.15.5" />
-    <PackageReference Include="NHibernate" Version="5.4.1" />
+    <PackageReference Include="NHibernate" Version="5.4.9" />
   </ItemGroup>
 
   <ItemGroup>
