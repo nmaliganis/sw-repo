@@ -48,6 +48,19 @@ The system is based on a **Microservices Architecture** for ease of design, scal
 3. **Remote Monitoring Service (RMS)**
 4. **Power BI and Analytics (PBI)**
 
+- **User Interface - Clients UIS :**
+<p align="center">
+<img src="_assets/images/sw1.png"/>
+</p>
+
+<p align="center">
+<img src="_assets/images/sw2.png"/>
+</p>
+
+<p align="center">
+<img src="_assets/images/sw3.png"/>
+</p>
+
 These microservices operate in a **stateless** configuration, orchestrated centrally for load balancing and scaling as necessary.
 
 ### Data Storage and Processing
