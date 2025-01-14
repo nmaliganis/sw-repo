@@ -32,6 +32,16 @@ The system is based on a **Microservices Architecture** for ease of design, scal
 6. **Azure IoT Hub Management Service (AIoTMS)**
 7. **API Gateway for Service Registration (APIG)**
 
+- **IoT Waste Devices :**
+<p align="center">
+<img src="_assets/images/hd1.png"/>
+</p>
+
+- **IoT Waste Devices - Prototype :**
+<p align="center">
+<img src="_assets/images/hd2.png"/>
+</p>
+
 #### **Microservices (Clients):**
 1. **User Interface Service (UIS)**
 2. **Customer Interface Service (CIS)**
