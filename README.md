@@ -59,11 +59,11 @@ Below is the estimated monthly cost for the system based on its architecture:
 
 | **Service**               | **Database**                     | **Host**           | **Managed Services**                                    | **Cost/Month**  | **Comments**                     |
 |---------------------------|----------------------------------|--------------------|-------------------------------------------------------|-----------------|----------------------------------|
-| User Management Service   | Azure MSSQL                     | Kubernetes Node    | Azure Functions, Service Bus, SMS Twilio, Key Vault   | ~$60           | Shared MSSQL with CMS            |
-| Customer Management Service| Azure MSSQL                    | Kubernetes Node    | Azure Functions, Service Bus, Mobile Notifications    | ~$60           |                                  |
-| Asset-Fleet Management Service| Azure PostgreSQL Cluster, Cosmos DB | Kubernetes Node    | Redis Cache, Azure Time Series Insights              | ~$120          | Includes GIS for GeoJSON         |
-| Telemetry Management Service| Azure Blob (Cold), Cosmos DB (Hot) | Kubernetes Node    | Azure IoT Hub, Stream Analytics                      | ~$100          | 400,000 messages/day IoT Hub ($25)|
-| Other Services (TS, APIG) | Azure MSSQL                     | Kubernetes Nodes   | Power BI, Azure Databricks                           | ~$80           |                                  |
+| User Management Service   | Azure MSSQL                     | Kubernetes Node    | Azure Functions, Service Bus, SMS Twilio, Key Vault   | ~$620           | Shared MSSQL with CMS            |
+| Customer Management Service| Azure MSSQL                    | Kubernetes Node    | Azure Functions, Service Bus, Mobile Notifications    | ~$620           |                                  |
+| Asset-Fleet Management Service| Azure PostgreSQL Cluster, Cosmos DB | Kubernetes Node    | Redis Cache, Azure Time Series Insights              | ~$520          | Includes GIS for GeoJSON         |
+| Telemetry Management Service| Azure Blob (Cold), Cosmos DB (Hot) | Kubernetes Node    | Azure IoT Hub, Stream Analytics                      | ~$1200          | 400,000 messages/day IoT Hub ($25)|
+| Other Services (TS, APIG) | Azure MSSQL                     | Kubernetes Nodes   | Power BI, Azure Databricks                           | ~$800           |                                  |
 
 ## Production Architecture
 The production environment leverages:
@@ -75,6 +75,11 @@ The production environment leverages:
 ## Development Architecture
 - **Staging and Testing Environments:** Hosted on VMs with Jenkins managing the CI/CD pipeline.
 - **Azure Container Service:** Deploys containerized microservices efficiently.
+
+- Solution Architection :
+<p align="center">
+<img src="_assets/images/arch1.png"/>
+</p>
 
 ## Implementation Steps
 1. **Setup Azure IoT Hub** for device communication.
