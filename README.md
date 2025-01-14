@@ -76,9 +76,9 @@ The production environment leverages:
 - **Staging and Testing Environments:** Hosted on VMs with Jenkins managing the CI/CD pipeline.
 - **Azure Container Service:** Deploys containerized microservices efficiently.
 
-- Solution Architection :
+- **Solution Architection :**
 <p align="center">
-<img src="_assets/images/arch1.png"/>
+<img src="_assets/images/arch2.png"/>
 </p>
 
 ## Implementation Steps
@@ -87,6 +87,11 @@ The production environment leverages:
 3. **Implement CI/CD Pipelines** for rapid deployment and testing.
 4. **Configure Data Storage** for telemetry (hot and cold paths).
 5. **Deploy Production Environment** with Kubernetes orchestration.
+
+- **Storage Architection :**
+<p align="center">
+<img src="_assets/images/arch1.png"/>
+</p>
 
 ## Conclusion
 This IoT Smart Waste Management Solution leverages Azure’s cloud infrastructure to deliver a scalable, cost-efficient, and effective system for managing solid waste. For further details, refer to the respective microservices documentation or the cost planning sheet.
