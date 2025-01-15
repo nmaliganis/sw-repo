@@ -99,7 +99,7 @@ The production environment leverages:
 - **Staging and Testing Environments:** Hosted on VMs with Jenkins managing the CI/CD pipeline.
 - **Azure Container Service:** Deploys containerized microservices efficiently.
 
-- **Solution Architection :**
+- **Solution Architecture :**
 <p align="center">
 <img src="_assets/images/arch2.png"/>
 </p>
@@ -111,7 +111,7 @@ The production environment leverages:
 4. **Configure Data Storage** for telemetry (hot and cold paths).
 5. **Deploy Production Environment** with Kubernetes orchestration.
 
-- **Storage Architection :**
+- **Storage Architecture :**
 <p align="center">
 <img src="_assets/images/arch1.png"/>
 </p>
